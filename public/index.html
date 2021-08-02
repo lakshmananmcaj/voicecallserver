@@ -5,7 +5,7 @@
 <body>
 <script src="/socket.io/socket.io.js"></script>
 <script>
-            var socket = io('https://voicecallserver.azurewebsites.net/');
+            var socket = io('http://localhost:7000/');
 
             socket.on('greeting-from-server', function (message) {
                 document.body.appendChild(
